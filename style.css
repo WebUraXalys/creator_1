@@ -1,0 +1,170 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   background-color: bisque;
+     font-family: "Playwrite FR Moderne", cursive;
+}
+.container{
+   display: flex;
+   height: 100vh;
+   justify-content: space-around;
+}
+.left{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.my_photo{
+   height: 400px;
+   width: 500px;
+   border: 2px  solid #000;
+   border-radius: 4px;
+   box-shadow: 13px 10px 28px 14px rgba(0,0,0,0.79);
+}
+.right{
+   width: 40%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.line{
+   content: "";
+   height: 60vh;
+   margin: auto 0;
+   width: 8px;
+   background-color: #fff;
+   border-radius: 50%
+}
+
+.box_buttons{
+   margin-top: 60px;
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   flex-direction: column;
+}
+.big_button{
+   width: 180px;
+   border: 1px solid #fff;
+   padding: 10px;
+   background: none;
+}
+.big_button:hover{
+   background-color: #fff;
+}
+.big_button:first-child{
+   margin-right: 30px;
+}
+.box_small_buttons{
+   display: flex;
+   justify-content: space-evenly;
+   width: 60%;
+}
+.box_small_buttons svg{
+   width: 35px;
+}
+
+/* Page my_projects */
+.header_block{
+   display: flex;
+}
+.button_back{
+   border: 4px solid #fff;
+   border-radius: 15px;
+   height: 45px;
+   width: 100px;
+   background: none;
+   text-decoration: none;
+   font-size: 25px;
+   margin: 20px 0 -30px 90px;
+}
+.title{
+   font-size: 55px;
+   margin: auto;
+}
+.line2{
+   content: "";
+   margin: auto 0;
+   width: 90%;
+   height: 6px;
+   background-color: #fff;
+   border-radius: 50%;
+   margin: auto;
+   margin-top: 10px;
+
+}
+.cards{
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   max-width: 80%;
+   margin: auto;
+   margin-top: 20px;
+}
+.card{
+   height: 400px;
+   width: 350px;
+   background-color: #fff;
+   border: 3px solid #000;
+   border-radius: 15px;
+   margin: 20px 0;
+}
+.card_img{
+   width: 100%;
+   height: 65%;
+}
+.bottom{
+   text-align: center;
+}
+.card_title{
+   font-size: 25px;
+   font-weight: bold;
+}
+.description{
+   font-size: 18px;
+}
+.card_btn{
+   border: 2px solid #000;
+   border-radius: 15px;
+   height: 45px;
+   width: 100px;
+   background: none;
+   text-decoration: none;
+   font-size: 20px;
+   margin-top: 40px;
+}
+
+.container2{
+   width: 60%;
+   margin: auto;
+   text-align: center;
+   margin: 5% auto;
+}
+
+@media screen and (max-width: 770px){
+   .my_photo {
+      height: 300px;
+      width: 300px;
+   }
+}
+@media screen and (max-width: 500px){
+   .container{
+      display: block;
+   }
+   .line{
+      transform: rotate(90deg);
+      margin: -100px auto;
+      height: 60%;
+   }
+   .right{
+      width: 80%;
+      margin: auto;
+      text-align: center;
+   }
+   .left{
+      margin-top: 50px;
+   }
+}
